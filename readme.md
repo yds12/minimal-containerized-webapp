@@ -5,9 +5,13 @@ a Docker container.
 
 ## Instructions
 
-[Install Docker](https://docs.docker.com/engine/install/).
+[Install Docker](https://docs.docker.com/engine/install/). Clone this
+repository:
 
-Build the docker image of the app:
+    git clone https://github.com/yds12/minimal-containerized-webapp.git
+
+Go to the cloned repository directory (`cd minimal-containerized-webapp`), 
+and build the docker image of the app:
 
     docker build -t minwebapp .
 
