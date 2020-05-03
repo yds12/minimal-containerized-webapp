@@ -12,7 +12,8 @@ COPY package*.json ./
 RUN npm install
 
 # Copy your local app files to the current working directory in the
-# container.
+# container. Things that should not be copied (such as the node_modules
+# directory) must be listed in the .dockerignore file.
 COPY . .
 
 # Uncomment the command below to set the variable PORT in the container.
